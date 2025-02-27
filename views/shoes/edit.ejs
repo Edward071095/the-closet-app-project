@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editing <%= shoe.brand %></title>
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+    <h1>Edit <%= shoe.brand %> <%= shoe.style %></h1>
+    <form action="/users/<%= user._id %>/shoes/<%= shoe._id %>?_method=PUT" method="POST">
+        <label for="brand">Brand:</label>
+        <input 
+            type="text" 
+            name="brand" 
+            id="brand" 
+            value="<%= shoe.brand %>"
+            />
+      
+        <label for="style">Style:</label>
+        <input 
+            type="text" 
+            name="style" 
+            id="style" 
+            value="<%= shoe.style %>"
+            />
+      
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+      
+        <label for="image">Image:</label>
+        <input 
+            type="text" 
+            name="image" 
+            id="image" 
+            value="<%= shoe.image %>"
+            />
+
+        <button type="submir">Update Shoe</button>
+      </form>
+  </body>
+</html>
