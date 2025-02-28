@@ -77,4 +77,15 @@ router.post('/sign-in', async (req, res) => {
   }
 });
 
+router.get('/:userId', async (req, res) => {
+  try {
+       
+    res.render('users/show.ejs');
+  } catch (error) {
+
+    console.log(error);
+    res.redirect('/');
+  }
+});
+
 module.exports = router;

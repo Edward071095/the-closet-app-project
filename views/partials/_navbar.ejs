@@ -1,5 +1,6 @@
 <nav>
     <% if(user) { %>
+    <a href="/community">View All Members</a>
     <a href="/users/<%= user._id %>/shoes">Your Shoes</a>
     <a href="/auth/sign-out">Sign Out</a>
     <% } else { %>
