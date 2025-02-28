@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 body {
+    background-image: url('https://img.freepik.com/premium-photo/3d-illustration-shoe-store-minimal-modern-style-interior-design-2_1315076-1026.jpg?w=740');
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: #e10f0f;
+    background-color: #1c235b;
   }
 
   /* public/stylesheets/style.css */
@@ -79,3 +81,114 @@ body {
     background-color: #ffffff;
   }
   
+  
+.signin-container,
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+  form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20em;
+  height: 10%;
+  padding: 0px 20px 15px 20px;
+  border-radius: 20px;
+  color: #52dcff;
+  font-weight: bold;
+}  
+
+input {
+  border: 1px solid rgb(182, 182, 182);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #1c235b;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+.all-shoes-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .all-shoes-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 90%;
+  }
+  
+  .add-shoes-link {
+    padding: 10px;
+    background-color: #52dcff;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1em;
+    padding: 2px 25px;
+    text-decoration: none;
+  }
+
+  .shoe-select-link {
+    /* padding: 10px; */
+    /* background-color: #52dcff; */
+    color: white;
+    /* border-radius: 30px;
+    border: none;
+    font-size: 1.1em;
+    padding: 2px 25px; 
+    text-decoration: none;  */
+  }
+  
+  .add-shoes-link:hover {
+    background-color: #52dcff;
+  }
+  
+ul {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+   /* ul > a {
+    text-decoration: none;
+    color: #1c2e5b;
+    width: 50%;
+    background-color: #f6e7e7;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+  }  */
+  
+  ul > a:hover {
+    background-color: #4b598e;
+    color: white;
+  }
+   

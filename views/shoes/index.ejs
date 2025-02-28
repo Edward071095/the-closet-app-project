@@ -10,16 +10,20 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
-    <h1>Your Shoes</h1>
-    <a href="/users/<%=user._id%>/shoes/new">Add a Shoe</a>
+  <div class="all-shoes-body">
+    <div class="all-shoes-header">
+      <h1>Your Shoes</h1>
+      <a class="add-shoes-link" href="/users/<%=user._id%>/shoes/new">Add a Shoe</a>
+    </div>
     <ul>
       <% shoes.forEach((shoe)=>{ %>
       <li>
-        <a href="/users/<%= user._id %>/shoes/<%= shoe._id %>">
+        <a class="shoe-select-link" href="/users/<%= user._id %>/shoes/<%= shoe._id %>">
 
         <%= shoe.brand %> <%= shoe.style %> <%= shoe.image %>
       </li>
       <% }) %>
     </ul>
+  </div>
   </body>
 </html>
