@@ -9,17 +9,23 @@
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <h1><%= selectedUser.username %>'s Closet</h1>
+    <div class="user-show-text">
     <h2>Name: <%= selectedUser.username %></h2>
 
     <h3>Shoes:</h3>
         <ul>
             <% selectedUser.shoes.forEach(shoe => { %>
-            <li><%= shoe.brand %> 
+            <li>
+              <div>
+                <%= shoe.brand %> 
                 <%= shoe.style %> 
                 <%= shoe.description %>
-                <%= shoe.image %>
+              </div>
+                <img src="<%= shoe.image %>" alt="<%= shoe.brand %>"> 
+              
             </li>
             <% }) %>
         </ul>
+      </div>
   </body>
 </html>

@@ -236,3 +236,19 @@ select {
   font-size: 10px;
   margin-bottom: 0px;
 }
+
+.user-show-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+
+}
+
+.user-show-text img {
+  width: 100px;
+  height: auto;
+}
+
