@@ -1,47 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100vw;
-  background-color: #9ac2ef;
+.shoe-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.show-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.show-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-}
-
-.show-header > h1 {
-  color: #1c2e5b;
+.shoe-details > h1 {
+  color: #4b598e;
   font-size: 3.4em;
   margin-left: 10px;
+  margin-bottom: 0px;
 }
 
-.show-actions {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0 0 30px;
+.button-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.button-container form {
+    padding: 0px;
+    width: fit-content;
 }
 
 button {
   padding: 8px 10px;
-  background-color: #ce4866;
+  background-color: #52dcff;
   color: white;
   border-radius: 30px;
   border: none;
@@ -51,28 +36,18 @@ button {
 }
 
 button:hover {
-  background-color: #e84a6c;
+  background-color: #1c235b;
 }
 
-.show-actions > a {
-  background-color: #4b598e;
+.shoe-details a {
   color: white;
   text-decoration: none;
-  font-size: 1.1em;
-  padding: 8px 10px;
-  border-radius: 30px;
-  width: 10em;
-  text-align: center;
-  margin: 5px;
-  font-family: 'Poppins', sans-serif;
 }
 
-.show-actions > a:hover {
-  background-color: #1c2e5b;
-}
+
 
 p {
-  color: #ce4866;
+  color: #ffffff;
   font-weight: bold;
   font-size: 1.4em;
   margin: 10px 30px;
@@ -94,14 +69,6 @@ p {
 
 .show-notes-container > a:hover {
   color: #4b598e;
-}
-
-.show-notes {
-  background-color: #f6e7e7;
-  width: 85%;
-  border-radius: 20px;
-  padding: 40px 40px 20px 40px;
-  margin: 20px 10px;
 }
 
 h2 {
