@@ -139,6 +139,10 @@ button {
     padding: 10px 20px;
     width: 90%;
   }
+
+  .shoe-entry {
+    text-align: center;
+  }
   
   .add-shoes-link {
     padding: 10px;
@@ -152,14 +156,15 @@ button {
   }
 
   .shoe-select-link {
-    /* padding: 10px; */
-    /* background-color: #52dcff; */
     color: white;
-    /* border-radius: 30px;
-    border: none;
-    font-size: 1.1em;
-    padding: 2px 25px; 
-    text-decoration: none;  */
+    font-size: 20px;
+
+
+  }
+
+  .shoe-select-link img {
+    width: 100px;
+    height: auto;
   }
   
   .add-shoes-link:hover {
@@ -192,3 +197,36 @@ ul {
     color: white;
   }
    
+
+  /* public/stylesheets/style.css */
+
+.new-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.new-body > form,
+.edit-body > form {
+  height: 70%;
+}
+
+textarea,
+select {
+  border: 1px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+select {
+  margin-bottom: 10px;
+}
+
+.edit-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

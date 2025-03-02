@@ -3,27 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="stylesheet" href="/stylesheets/show.css" />
     <title><%= shoe.brand %></title>
   </head>
   <body>
-    <%- include('../partials/_navbar.ejs') %>
-    <h1><%= shoe.brand %> <%= shoe.style %></h1>
-    <% if (shoe.notes) { %>
-    <p>Description: <%= shoes.description %></p>
-    <% } %> <% if (shoe.image) { %>
-    <a href="<%= shoe.image %>">View Shoe Image</a>
-    <% } %>
+  <%- include('../partials/_navbar.ejs') %>
+    <div class="show-body">
+      <div class="show-header">
+      <h1><%= shoe.brand %> <%= shoe.style %></h1>
+        <div class="show-sidebar">
+          <div class="show-actions">
+            <% if (shoe.notes) { %>
+            <p>Description: <%= shoes.description %></p>
+            <% } %> <% if (shoe.image) { %>
+            <a href="<%= shoe.image %>">View Shoe Image</a>
+            <% } %>
 
-    <a href="/users/<%= user._id %>/shoes/<%= shoe._id %>/edit">
-        Edit this shoe
-      </a>
+            <a href="/users/<%= user._id %>/shoes/<%= shoe._id %>/edit">
+                Edit this shoe
+              </a>
 
-    <form
-    action="/users/<%= user._id %>/shoes/<%= shoe._id %>?_method=DELETE"
-    method="POST"
-  >
-    <button type="submit">Delete this shoe</button>
-  </form>
+            <form
+              action="/users/<%= user._id %>/shoes/<%= shoe._id %>?_method=DELETE"
+              method="POST"
+          >
+              <button type="submit">Delete this shoe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

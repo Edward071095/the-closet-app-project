@@ -17,10 +17,13 @@
     </div>
     <ul>
       <% shoes.forEach((shoe)=>{ %>
-      <li>
+      <li class="shoe-entry">
         <a class="shoe-select-link" href="/users/<%= user._id %>/shoes/<%= shoe._id %>">
-
-        <%= shoe.brand %> <%= shoe.style %> <%= shoe.image %>
+        <div>
+          <%= shoe.brand %>, <%= shoe.style %> 
+        </div>
+        
+        <img src="<%= shoe.image %>" alt="<%= shoe.brand %>"> 
       </li>
       <% }) %>
     </ul>

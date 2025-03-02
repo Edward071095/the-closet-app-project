@@ -8,6 +8,7 @@
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
+    <div class="edit-body">
     <h1>Edit <%= shoe.brand %> <%= shoe.style %></h1>
     <form action="/users/<%= user._id %>/shoes/<%= shoe._id %>?_method=PUT" method="POST">
         <label for="brand">Brand:</label>
@@ -27,7 +28,11 @@
             />
       
         <label for="description">Description:</label>
-        <textarea name="description" id="description"></textarea>
+        <textarea
+        name="description" 
+        id="description" 
+         > <%= shoe.description %>
+        </textarea>
       
         <label for="image">Image:</label>
         <input 
@@ -39,5 +44,6 @@
 
         <button type="submir">Update Shoe</button>
       </form>
+    </div>
   </body>
 </html>
