@@ -55,5 +55,5 @@ app.use('/community', usersController);
 app.use('/users/:userId/shoes', shoesController);
 
 app.listen(port, () => {
-  console.log(`The express app is ready on port ${port}!`);
+
 });

@@ -6,12 +6,7 @@
     align-items: center;
 }
 
-.shoe-details > h1 {
-  color: #4b598e;
-  font-size: 3.4em;
-  margin-left: 10px;
-  margin-bottom: 0px;
-}
+
 
 .button-container {
     display: flex;

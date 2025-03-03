@@ -11,8 +11,6 @@ body {
     background-color: #1c235b;
   }
 
-  /* public/stylesheets/style.css */
-
 .index-body {
     background-image: url('https://img.freepik.com/premium-photo/beautiful-wardrobe-with-transparent-shoeboxes_1354518-9075.jpg?w=740');
     background-repeat: no-repeat;
@@ -178,25 +176,12 @@ ul {
     align-items: center;
   }
   
-   /* ul > a {
-    text-decoration: none;
-    color: #1c2e5b;
-    width: 50%;
-    background-color: #f6e7e7;
-    border-radius: 30px;
-    padding: 10px 20px;
-    margin: 15px 0;
-    font-weight: bold;
-    text-align: center;
-  }  */
   
   ul > a:hover {
     background-color: #4b598e;
     color: white;
   }
    
-
-  /* public/stylesheets/style.css */
 
 .new-body {
   display: flex;

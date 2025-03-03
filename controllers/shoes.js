@@ -11,7 +11,6 @@ router.get('/', async (req, res) => {
             shoes: currentUser.shoes,
         });
       } catch (error) {
-        console.log(error);
         res.redirect('/');
       }
   });
@@ -29,7 +28,6 @@ router.post('/', async (req, res) => {
         await currentUser.save();
         res.redirect(`/users/${currentUser._id}/shoes`);
     } catch (error) {
-        console.log(error)
         res.redirect('/');
     }
 });
@@ -43,7 +41,6 @@ router.get('/:shoeId', async (req, res) => {
             shoe: shoe,
         });
     } catch (error) {
-      console.log(error)
       res.redirect('/');
     }
 });
@@ -56,7 +53,6 @@ router.delete('/:shoeId', async (req, res) => {
         await currentUser.save();
         res.redirect(`/users/${currentUser._id}/shoes`)
     } catch (error) {
-        console.log(error);
         res.redirect('/');
     }
 });
@@ -70,7 +66,6 @@ router.get('/:shoeId/edit', async (req, res) => {
             shoe: shoe,
         });
     } catch (error) {
-        console.log(error);
         res.redirect('/');
     }
 });
@@ -86,7 +81,6 @@ router.put('/:shoeId', async (req, res) => {
             `/users/${currentUser._id}/shoes/${req.params.shoeId}`
         );
     } catch (error) {
-        console.log(error)
         res.redirect('/');
     }
 });
