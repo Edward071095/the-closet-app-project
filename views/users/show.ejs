@@ -22,7 +22,16 @@
                 <%= shoe.description %>
               </div>
                 <img src="<%= shoe.image %>" alt="<%= shoe.brand %>"> 
-              
+
+                <div class="button-container">
+                <% if (shoe.image) { %>
+                  <a href="<%= shoe.image %>">
+                    <button>
+                      View Shoe Image
+                  </button>
+                  </a>
+                <% } %>
+              </div>
             </li>
             <% }) %>
         </ul>

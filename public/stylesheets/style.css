@@ -156,10 +156,8 @@ button {
   }
 
   .shoe-select-link {
-    color: white;
-    font-size: 20px;
-
-
+    color: #52dcff;
+    font-size: 30px;
   }
 
   .shoe-select-link img {
@@ -242,7 +240,7 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #52dcff;
   text-align: center;
 
 }
